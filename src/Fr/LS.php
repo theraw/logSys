@@ -600,8 +600,7 @@ HTML;
             /**
              * Couldn't connect to Database
              */
-            self::log('Could not connect to database. Check config->db credentials. PDO Output: ' . $e->getMessage());
-
+            die('Could not connect to database. Check config->db credentials. PDO Output: ' . $e->getMessage());
             return false;
         }
     }
