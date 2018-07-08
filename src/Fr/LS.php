@@ -602,6 +602,7 @@ HTML;
              */
             die('Could not connect to database. Check config->db credentials. PDO Output: ' . $e->getMessage());
             return false;
+            $this->connection->close();
         }
     }
 
